@@ -1,0 +1,13 @@
+// DEV
+###
+GET http://localhost:3000
+###
+GET http://localhost:3000/404
+###
+GET http://localhost:3000/contacts
+###
+GET http://localhost:3000/contacts/63c0723ecba10a8bdcd6290f
+
+// PROD
+###
+GET 
