@@ -10,4 +10,8 @@ GET http://localhost:3000/contacts/63c0723ecba10a8bdcd6290f
 
 // PROD
 ###
-GET 
+GET https://cse341-psei.onrender.com/
+###
+GET https://cse341-psei.onrender.com/contacts
+###
+GET https://cse341-psei.onrender.com/contacts/63c0723ecba10a8bdcd6290f
