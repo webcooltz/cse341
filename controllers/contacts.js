@@ -70,7 +70,7 @@ const createContact = async (req, res) => {
     const response = await mongodb.getDb().db().collection('contacts').deleteOne({ _id: userId }, true);
     console.log(response);
     if (response.deletedCount > 0) {
-      res.status(204).json({
+      res.status(200).json({
         response: response,
         message: "Deleted contact successfully.",
       });
