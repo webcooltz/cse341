@@ -4,6 +4,8 @@
 GET http://localhost:3000
 ### GET 404
 GET http://localhost:3000/404
+### GET API swagger docs
+GET http://localhost:3000/api-docs
 ### GET all contacts
 GET http://localhost:3000/contacts
 ### GET 1 contact
@@ -23,7 +25,7 @@ content-type: application/json
     "firstName": "Ty", "lastName": "tuck", "email": "tylertucker55@gmail.com", "favoriteColor": "red", "birthday": "09-14-1994"
 }
 ### DELETE contact
-DELETE http://localhost:3000/contacts/63ccc37eea4b43de2c495b6a HTTP/1.1
+DELETE http://localhost:3000/contacts/63ccc6ec7aec389063b54896 HTTP/1.1
 
 ### ----------------- PROD ------------------ ###
 
@@ -31,6 +33,8 @@ DELETE http://localhost:3000/contacts/63ccc37eea4b43de2c495b6a HTTP/1.1
 GET https://cse341-psei.onrender.com/
 ### GET 404
 GET http://cse341-psei.onrender.com/404
+### GET API swagger docs
+GET http://cse341-psei.onrender.com/api-docs
 ### GET all contacts
 GET https://cse341-psei.onrender.com/contacts
 ### GET 1 contact
@@ -43,11 +47,11 @@ content-type: application/json
     "firstName": "Tyler", "lastName": "Turner", "email": "tylertucker55@gmail.com", "favoriteColor": "red", "birthday": "09-14-1994"
 }
 ### PUT - update contact
-PUT http://cse341-psei.onrender.com/contacts/63ccc6594b5ef385faa5014d HTTP/1.1
+PUT http://cse341-psei.onrender.com/contacts/63c0723ecba10a8bdcd6290f HTTP/1.1
 content-type: application/json
 
 {
     "firstName": "Ty", "lastName": "tuck", "email": "tylertucker55@gmail.com", "favoriteColor": "red", "birthday": "09-14-1994"
 }
 ### DELETE contact
-DELETE http://cse341-psei.onrender.com/contacts/63ccc6594b5ef385faa5014d HTTP/1.1
+DELETE http://cse341-psei.onrender.com/contacts/63c0723ecba10a8bdcd6290f HTTP/1.1
