@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "RPG",
-    "description": "RPG API for BYUI CSE 341",
+    "title": "Contacts",
+    "description": "Contacts API for BYUI CSE 341",
     "version": "1.0.0"
   },
   "host": "cse341-psei.onrender.com",
@@ -22,7 +22,7 @@
         }
       }
     },
-    "/characters/": {
+    "/contacts/": {
       "post": {
         "description": "",
         "parameters": [
@@ -32,25 +32,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "charName": {
+                "firstName": {
                   "example": "any"
                 },
-                "level": {
+                "lastName": {
                   "example": "any"
                 },
-                "money": {
+                "email": {
                   "example": "any"
                 },
-                "createdAt": {
+                "favoriteColor": {
                   "example": "any"
                 },
-                "lastPlayed": {
-                  "example": "any"
-                },
-                "owner": {
-                  "example": "any"
-                },
-                "location": {
+                "birthday": {
                   "example": "any"
                 }
               }
@@ -79,7 +73,7 @@
         }
       }
     },
-    "/characters/{id}": {
+    "/contacts/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -114,153 +108,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "charName": {
+                "firstName": {
                   "example": "any"
                 },
-                "level": {
+                "lastName": {
                   "example": "any"
                 },
-                "money": {
+                "email": {
                   "example": "any"
                 },
-                "createdAt": {
+                "favoriteColor": {
                   "example": "any"
                 },
-                "lastPlayed": {
-                  "example": "any"
-                },
-                "owner": {
-                  "example": "any"
-                },
-                "location": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "No Content"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      },
-      "delete": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/items/": {
-      "post": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "charName": {
-                  "example": "any"
-                },
-                "level": {
-                  "example": "any"
-                },
-                "rarity": {
-                  "example": "any"
-                },
-                "amount": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Created"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      },
-      "get": {
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/items/{id}": {
-      "get": {
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "charName": {
-                  "example": "any"
-                },
-                "level": {
-                  "example": "any"
-                },
-                "rarity": {
-                  "example": "any"
-                },
-                "amount": {
+                "birthday": {
                   "example": "any"
                 }
               }
