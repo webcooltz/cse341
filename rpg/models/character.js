@@ -3,11 +3,7 @@ const mongoose = require('mongoose');
 const characterSchema = mongoose.Schema({
     charName: { type: String, required: true },
     level: { type: Number, required: true },
-    money: { type: Number, required: false },
-    createdAt: { type: String, required: false },
-    lastPlayed: { type: String, required: false },
-    owner: { type: String, required: true },
-    location: { type: String, required: false }
+    inventory: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Item', required: true }],
 });
 
 module.exports = mongoose.model('Character', characterSchema);
