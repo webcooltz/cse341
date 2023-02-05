@@ -23,7 +23,11 @@ const createCharacter = async (req, res) => {
   const character = new Character({
     charName: req.body.charName,
     level: req.body.level,
-    inventory: req.body.inventory
+    money: req.body.money,
+    createdAt: req.body.createdAt,
+    lastPlayed: req.body.lastPlayed,
+    owner: req.body.owner,
+    location: req.body.location
   });
   const response = await mongodb.getDb().db().collection('characters').insertOne(character);
   if (response.acknowledged) {
@@ -39,11 +43,15 @@ const createCharacter = async (req, res) => {
   
   const updateCharacter = async (req, res) => {
     const charId = new ObjectId(req.params.id);
-    const character = new Character({
+    const character = {
       charName: req.body.charName,
       level: req.body.level,
-      inventory: req.body.inventory
-    });
+      money: req.body.money,
+      createdAt: req.body.createdAt,
+      lastPlayed: req.body.lastPlayed,
+      owner: req.body.owner,
+      location: req.body.location
+    };
     const response = await mongodb
       .getDb()
       .db()

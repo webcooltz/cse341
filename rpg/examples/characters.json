@@ -2,25 +2,19 @@
   {
   "charName": "webcooltz",
   "level": 70,
-  "inventory": [
-    {
-      "name": "sword of js",
-      "level": 0,
-      "rarity": "common",
-      "amount": 2
-    }
-    ]
+  "money": 1000,
+  "createdAt": "01/01/2023",
+  "lastPlayed": "02/01/2023",
+  "owner": "tylertucker55",
+  "location": "267, 235, 120"
   },
   {
-    "charName": "webcooltz2",
-    "level": 70,
-    "inventory": [
-      {
-        "name": "sword of node js",
-        "level": 0,
-        "rarity": "uncommon",
-        "amount": 1
-      }
-      ]
-    }
+  "charName": "zamarickz",
+  "level": 70,
+  "money": 1000,
+  "createdAt": "01/01/2023",
+  "lastPlayed": "02/01/2023",
+  "owner": "keaton",
+  "location": "275, 245, 120"
+  }
 ]
